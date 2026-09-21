@@ -4,10 +4,9 @@
     <section class="about-page-section">
         
         <div class="about-hero">
-            <h1 class="about-title">Computer Science Graduate | Software Engineer</h1>
+            <h1 class="about-title">Computer Science Graduate | Software Engineer and Web Developer</h1>
             <p class="about-philosophy">
-                Computer Science goes far beyond a mere academic degree; it is a comprehensive toolset for analyzing complex problems and engineering refined digital solutions.
-            </p>
+                Computer Science goes far beyond a mere academic degree; it is a comprehensive tool set for analyzing complex problems and engineering refined digital solutions.            </p>
         </div>
 
         <div class="journey-card-wrapper">
@@ -18,7 +17,7 @@
                 <div class="journey-card-item">
                     <div class="journey-item-content">
                         <span class="journey-date">June 2026 – August 2026</span>
-                        <h3 class="journey-item-title">Software Engineering Trainee</h3>
+                        <h3 class="journey-item-title">Web Developer (Full-Stack)</h3>
                         <p class="journey-institution">Devoracy</p>
                         <p class="journey-desc">
                             Completed an intensive co-op training program at Devoracy, a specialized technology and software solutions company focused on building modern digital solutions, advanced systems, and web applications according to cutting-edge technologies and high industry standards.
@@ -30,7 +29,7 @@
                 <div class="journey-card-item">
                     <div class="journey-item-content">
                         <span class="journey-date">2020 – 2026</span>
-                        <h3 class="journey-item-title">Bachelor's Degree in Computer Science</h3>
+                        <h3 class="journey-item-title">Bachelor's in Computer Science</h3>
                         <p class="journey-institution">Qassim University</p>
                         <p class="journey-desc">
                             Covered a comprehensive range of academic concepts including system architecture, algorithms, data structures, network principles, and information security, alongside solid foundations in Full-Stack web development, Artificial Intelligence, and Machine Learning.

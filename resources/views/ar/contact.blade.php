@@ -28,8 +28,7 @@
 
         <!-- القسم الأيسر: نموذج الرسالة والتاغات التفاعلية -->
         <div class="contact-form-side">
-            <form action="{{ route('contact.store.ar') }}" method="POST" class="contact-form" id="contactForm">
-                @csrf <!-- مفتاح الأمان الضروري جداً -->
+            <form action="{{ route('contact.store.ar') }}" method="POST" class="contact-form" id="contactForm">                @csrf <!-- مفتاح الأمان الضروري جداً -->
 
                 <!-- رسالة النجاح تظهر هنا إذا تم الحفظ بنجاح -->
                @if(session('success'))

@@ -17,7 +17,7 @@
                 <h3 class="service-title">1. Full-Stack Web Development</h3>
                 <p class="service-desc">Architecting and engineering robust, scalable web applications and digital platforms from the ground up. Delivering seamless, high-performance user interfaces coupled with secure, highly optimized backend infrastructures built to industry-leading standards.</p>
                 <div class="tech-tags">
-                    <span>HTML/CSS</span> <span>JavaScript</span> <span>Laravel</span> <span>PHP</span> <span>Full-Stack Architecture</span> <span>Database Management</span>
+                    <span>HTML/CSS</span> <span>JavaScript</span> <span>Laravel</span> <span>Django</span> <span>PHP</span> <span>Full-Stack Architecture</span> <span>Database Management</span>
                 </div>
             </div>
         </article>

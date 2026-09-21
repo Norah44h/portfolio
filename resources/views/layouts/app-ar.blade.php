@@ -101,7 +101,7 @@
                 <h4 class="footer-heading">التواصل الاجتماعي</h4>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/norah-aldoghmani" target="_blank" class="social-btn">LinkedIn</a>
-                    <a href="https://github.com" target="_blank" class="social-btn">GitHub</a>
+                    <a href="https://github.com/Norah44h" target="_blank" class="social-btn">GitHub</a>
                 </div>
                 <p class="copyright-text">© 2026 نورة. جميع الحقوق محفوظة.</p>
             </div>

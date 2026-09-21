@@ -6,9 +6,9 @@
         
         <!-- 1. رأس الصفحة والفلسفة الأساسية -->
         <div class="about-hero">
-            <h1 class="about-title">خريجة علوم حاسب | مهندسة برمجيات</h1>
+            <h1 class="about-title"> خريجة علوم حاسب | مهندسة برمجيات و مطورة ويب</h1>
             <p class="about-philosophy">
-                علوم الحاسب أبعد بكثير من كونها مجرد شهادة أكاديمية; فهي أداة شاملة لتحليل المشكلات المعقدة وهندسة حلول رقمية مصقولة.
+                علوم الحاسب أبعد بكثير من كونها مجرد شهادة أكاديمية; هي أداة شاملة لتحليل المشكلات المعقدة وهندسة الحلول الرقمية.
             </p>
         </div>
 
@@ -23,7 +23,7 @@
                 <div class="journey-card-item">
                     <div class="journey-item-content">
                         <span class="journey-date">يونيو 2026 – أغسطس 2026</span>
-                        <h3 class="journey-item-title">متدربة هندسة برمجيات</h3>
+                        <h3 class="journey-item-title">مطورة ويب (Full-Stack)</h3>
                         <p class="journey-institution">شركة ديفوراسي (Devoraxy)</p>
                         <p class="journey-desc">
                             أتممت برنامج تدريب تعاوني مكثف في شركة ديفوراسي، وهي شركة متخصصة في الحلول التقنية والبرمجية تركز على بناء حلول رقمية حديثة، أنظمة متقدمة، وتطبيقات ويب وفق أحدث التقنيات والمعايير الصناعية العالية.
@@ -35,7 +35,7 @@
                 <div class="journey-card-item">
                     <div class="journey-item-content">
                         <span class="journey-date">2020 – 2026</span>
-                        <h3 class="journey-item-title">درجة البكالوريوس في علوم الحاسب</h3>
+                        <h3 class="journey-item-title">البكالوريوس في علوم الحاسب</h3>
                         <p class="journey-institution">جامعة القصيم</p>
                         <p class="journey-desc">
                             غطيت نطاقاً شاملاً من المفاهيم الأكاديمية بما في ذلك هندسة الأنظمة، الخوارزميات، هياكل البيانات، مبادئ الشبكات، وأمن المعلومات، إلى جانب أسس متينة في تطوير الويب المتكامل (Full-Stack)، الذكاء الاصطناعي، وتعلم الآلة.

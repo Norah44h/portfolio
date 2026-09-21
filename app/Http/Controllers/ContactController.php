@@ -5,10 +5,11 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\ContactMessage;
+use Illuminate\Support\Facades\Http; 
 
 class ContactController extends Controller
 {
-    // حفظ رسالة النسخة العربية مع التحقق
+    // حفظ رسالة النسخة العربية مع التحقق وإرسالها لـ Formspree
     public function storeArabic(Request $request)
     {
         $request->validate([
@@ -18,6 +19,7 @@ class ContactController extends Controller
             'message' => 'required|string',
         ]);
 
+        // 1. الحفظ في قاعدة البيانات المحلية (SQLite)
         ContactMessage::create([
             'name' => $request->name,
             'email' => $request->email,
@@ -25,10 +27,18 @@ class ContactController extends Controller
             'message' => $request->message,
         ]);
 
-        return back()->with('success', 'تم إرسال رسالتك بنجاح!');
+        // 2. الإرسال الخلفي لـ Formspree ليصلك الإيميل
+        Http::post('https://formspree.io/f/mgavedvb', [
+            'name' => $request->name,
+            'email' => $request->email,
+            'subject' => $request->subject,
+            'message' => $request->message,
+        ]);
+
+        return back()->with('success', 'تم إرسال رسالتك وحفظها بنجاح!');
     }
 
-    // حفظ رسالة النسخة الإنجليزية مع التحقق
+    // حفظ رسالة النسخة الإنجليزية مع التحقق وإرسالها لـ Formspree
     public function storeEnglish(Request $request)
     {
         $request->validate([
@@ -38,7 +48,16 @@ class ContactController extends Controller
             'message' => 'required|string',
         ]);
 
+        // 1. الحفظ في قاعدة البيانات المحلية (SQLite)
         ContactMessage::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'subject' => $request->subject,
+            'message' => $request->message,
+        ]);
+
+        // 2. الإرسال الخلفي لـ Formspree ليصلك الإيميل
+        Http::post('https://formspree.io/f/mgavedvb', [
             'name' => $request->name,
             'email' => $request->email,
             'subject' => $request->subject,

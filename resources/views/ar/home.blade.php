@@ -91,7 +91,7 @@
         <div class="projects-intro">
             <h3 class="section-title">
                 نحيي الأفكار واقعاً <br>
-                <span class="highlight-text">بشغف ودقة.</span>
+                <span class="highlight-text">بشغف ودقة</span>
             </h3>
             <p class="section-description">
                 مجموعة مختارة من الأعمال الحديثة والمشاريع التقنية، تعرض تجارب رقمية متكاملة وحلولاً مبتكرة مصممة بعناية وجودة عالية.
@@ -111,14 +111,14 @@
 <section class="contact-preview-section">
     <div class="contact-preview-container">
         <div class="contact-preview-content">
-            <h2 class="contact-title">لنقم ببناء شيء استثنائي معاً.</h2>
+            <h2 class="contact-title">لنقم ببناء شيء استثنائي معًا</h2>
             <p class="contact-description">
-                أستكشف حالياً فرصاً جديدة في هندسة البرمجيات، أنظمة الذكاء الاصطناعي، والتعاون التقني الشيق. لا تترددي في التواصل مباشرة عبر البريد الإلكتروني أو الانتقال إلى صفحة التواصل الكاملة.
+                أستكشف حاليًا فرصًا جديدة في هندسة البرمجيات، أنظمة الذكاء الاصطناعي، والتعاون التقني. لا تتردد في التواصل عبر البريد الإلكتروني أو إنتقل إلى صفحة التواصل.
             </p>
             
             <div class="contact-actions">
                 <a href="{{ route('ar.services') }}" class="services-link">
-                    <span>استعراض خدماتي</span>
+                    <span>خدماتي</span>
                     <svg style="transform: scaleX(-1);" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 </a>
                 <!-- البريد الإلكتروني كرابط نقي بدون إطار وفي المنتصف -->

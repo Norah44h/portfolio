@@ -14,10 +14,10 @@
                 <div class="service-icon-wrapper">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
                 </div>
-                <h3 class="service-title">1. تطوير الويب المتكامل (Full-Stack)</h3>
+                <h3 class="service-title">1. تطوير الويب (Full-Stack)</h3>
                 <p class="service-desc">هندسة وبناء تطبيقات ويب ومنصات رقمية قوية وقابلة للتوسع من الصفر. تقديم واجهات مستخدم سلسة وعالية الأداء، مدعومة ببنية تحتية خلفية (Backend) آمنة ومحسنة وفقاً لأعلى المعايير الصناعية.</p>
                 <div class="tech-tags">
-                    <span>HTML/CSS</span> <span>JavaScript</span> <span>Laravel</span> <span>PHP</span> <span>Full-Stack Architecture</span> <span>إدارة قواعد البيانات</span>
+                    <span>HTML/CSS</span> <span>JavaScript</span> <span>Laravel</span> <span>Django</span> <span>PHP</span> <span>Full-Stack Architecture</span> <span>إدارة قواعد البيانات</span>
                 </div>
             </div>
         </article>

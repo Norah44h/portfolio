@@ -1,13 +1,3 @@
-
-    <!-- 
-    
-            http://127.0.0.1:8000/admin-panel 
-
-            ADMIN_EMAIL=norah@portfolio.com
-            ADMIN_PASSWORD=secret123
-
-                                                    -->
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>

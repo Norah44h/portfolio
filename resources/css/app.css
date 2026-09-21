@@ -1244,7 +1244,7 @@
     align-items: start;
 }
 
-/* بطاقة المشروع (حجم موحد، ثبات تام، وتمدد سلس للأسفل فقط) */
+/* بطاقة المشروع (حجم موحد، ثبات تام، وتمدد سلس عند تمرير الماوس) */
 .new-proj-card {
     background: #FFFFFF;
     border-radius: 1rem;
@@ -1255,8 +1255,14 @@
     overflow: hidden;
     cursor: pointer;
     position: relative;
-    height: 400px; /* الارتفاع الافتراضي الموحد للجميع (صورة + تاق + نص + أزرار) */
-    transition: height 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    height: 400px; /* الارتفاع الثابت الافتراضي */
+    transition: height 0.35s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* عند تمرير الماوس: يتمدد الكرت للأسفل ليحتوي كل التفاصيل والتاغات الإضافية */
+.new-proj-card:hover {
+    height: auto;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
 /* صندوق الصورة الثابت في الأعلى */
@@ -1293,12 +1299,19 @@
     line-height: 1.3;
 }
 
-/* التاغات */
+/* التاغات (محصورة بارتفاع سطر واحد في الحالة العادية، وتفتح بالكامل عند الـ hover) */
 .new-proj-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.35rem;
     margin-bottom: 0.75rem;
+    max-height: 32px; /* حصر العرض بسطر واحد تقريباً */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.new-proj-card:hover .new-proj-tags {
+    max-height: 200px; /* السماح بظهور جميع التاغات عند تمرير الماوس */
 }
 
 .new-proj-tags span {
@@ -1319,7 +1332,7 @@
     margin-bottom: 0.75rem;
 }
 
-/* النبذة التقنية الإضافية (مخفية افتراضياً وتظهر عند التوسع الطولي) */
+/* النبذة التقنية الإضافية (مخفية تماماً وتظهر عند التمدد) */
 .new-proj-extra {
     display: none;
     opacity: 0;
@@ -1328,6 +1341,11 @@
     line-height: 1.5;
     margin-bottom: 0.75rem;
     transition: opacity 0.25s ease;
+}
+
+.new-proj-card:hover .new-proj-extra {
+    display: block;
+    opacity: 1;
 }
 
 /* الأزرار مثبتة دوماً في أسفل الكرت */
@@ -1404,7 +1422,6 @@
         padding: 2rem 1rem 4rem 1rem;
     }
 }
-
 
 /* ==================================
      تنسيقات سكشن التواصل العام 
@@ -1488,8 +1505,7 @@
     color: #374151;
 }
 
-.form-group input,
-.form-group textarea {
+.form-group input, .form-group textarea {
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
     border: 1px solid #D1D5DB;
@@ -1500,8 +1516,7 @@
     background: #FAFAFA;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+.form-group input:focus, .form-group textarea:focus {
     border-color: #2563EB;
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
     background: #FFFFFF;

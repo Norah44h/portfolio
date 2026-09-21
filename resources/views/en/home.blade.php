@@ -91,7 +91,7 @@
         <div class="projects-intro">
             <h3 class="section-title">
                 Bringing ideas to life <br>
-                <span class="highlight-text">with passion & precision.</span>
+                <span class="highlight-text">with passion & precision</span>
             </h3>
             <p class="section-description">
                 A curated selection of recent works and technical projects, showcasing end-to-end digital experiences and innovative solutions built with quality and craftsmanship.
@@ -111,9 +111,9 @@
 <section class="contact-preview-section">
     <div class="contact-preview-container">
         <div class="contact-preview-content">
-            <h2 class="contact-title">Let's build something exceptional together.</h2>
+            <h2 class="contact-title">Let's build something exceptional together</h2>
             <p class="contact-description">
-                Currently exploring new opportunities in software engineering, AI systems, and exciting technical collaborations. Feel free to reach out directly via email or head over to the full contact page.
+                Currently exploring new opportunities in software engineering, AI systems, and technical collaborations. Feel free to reach out via email or head over to the contact page.
             </p>
             
             <div class="contact-actions">
