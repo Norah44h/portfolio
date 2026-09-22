@@ -34,5 +34,10 @@ RUN echo "DocumentRoot /var/www/html/public" > /etc/apache2/sites-available/000-
     && echo "</Directory>" >> /etc/apache2/sites-available/000-default.conf
 RUN a2enmod rewrite
 
+# Clear and cache Laravel routes and config for production
+RUN php artisan config:clear \
+    && php artisan config:cache \
+    && php artisan route:cache
+
 EXPOSE 80
 CMD apache2-foreground
