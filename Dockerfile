@@ -40,6 +40,8 @@ RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf
 # Enable Apache Mod Rewrite
 RUN a2enmod rewrite
 
-# Expose port 80 and start Apache server
-EXPOSE 80
+# Expose port and start Apache with Render port mapping
+ENV PORT=10000
+RUN sed -i "s/80/\$PORT/g" /etc/apache2/sites-available/000-default.conf /etc/apache2/ports.conf
+EXPOSE 10000
 CMD apache2-foreground
