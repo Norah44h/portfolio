@@ -18,9 +18,9 @@ RUN composer install --no-dev --optimize-autoloader --no-interaction
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache \
     && chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
 
-# Configure Apache to point directly to Laravel's public directory
+# Configure Apache to point directly to Laravel's public directory and use dynamic PORT
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
-RUN echo '<VirtualHost *:80>' > /etc/apache2/sites-available/000-default.conf \
+RUN echo '<VirtualHost *:${PORT}>' > /etc/apache2/sites-available/000-default.conf \
     && echo '    DocumentRoot /var/www/html/public' >> /etc/apache2/sites-available/000-default.conf \
     && echo '    <Directory /var/www/html/public>' >> /etc/apache2/sites-available/000-default.conf \
     && echo '        Options Indexes FollowSymLinks' >> /etc/apache2/sites-available/000-default.conf \
@@ -29,7 +29,10 @@ RUN echo '<VirtualHost *:80>' > /etc/apache2/sites-available/000-default.conf \
     && echo '    </Directory>' >> /etc/apache2/sites-available/000-default.conf \
     && echo '</VirtualHost>' >> /etc/apache2/sites-available/000-default.conf
 
+# Update ports.conf to listen on PORT
+RUN sed -i "s/80/\${PORT}/g" /etc/apache2/ports.conf
+
 RUN a2enmod rewrite
 
-EXPOSE 80
+EXPOSE ${PORT}
 CMD apache2-foreground
