@@ -11,10 +11,6 @@ RUN apt-get update && apt-get install -y \
     unzip \
     libsqlite3-dev
 
-# Clear cache
-RUN apt-get clean && rm -rf /var/lib/apt/lists/*
-
-# Install PHP extensions
 RUN docker-php-ext-install pdo_mysql pdo_sqlite mbstring exif pcntl bcmath gd
 
 # Get latest Composer
@@ -37,11 +33,7 @@ ENV APACHE_DOCUMENT_ROOT /var/www/html/public
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
 RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf
 
-# Enable Apache Mod Rewrite
 RUN a2enmod rewrite
 
-# Expose port and start Apache with Render port mapping
-ENV PORT=10000
-RUN sed -i "s/80/\$PORT/g" /etc/apache2/sites-available/000-default.conf /etc/apache2/ports.conf
-EXPOSE 10000
+EXPOSE 80
 CMD apache2-foreground
